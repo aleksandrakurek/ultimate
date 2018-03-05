@@ -1,0 +1,23 @@
+{
+  "name": "ultimate",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "gulp-install": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.*",
+    "gulp-sass": "^3.1.0",
+    "sassdoc": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AleksandraKurek",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

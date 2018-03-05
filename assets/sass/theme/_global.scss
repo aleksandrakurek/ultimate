@@ -1,0 +1,59 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  * {
+    position: relative;
+    font-family: $font-lato;
+  }
+}
+
+body, html {
+  height: 100%;
+}
+
+ul,ol {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+ul {
+  list-style: none;
+}
+
+.center-vertical-parent {
+  display: flex;
+  min-height: 125px;
+  align-items: center;
+
+  .center-vertical-child {
+    align-self: center;
+    flex: 1;
+  }
+}
+
+input, textarea {
+  outline: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
