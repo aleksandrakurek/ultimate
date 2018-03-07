@@ -18,7 +18,7 @@
 $starting-width: 1960px; // max width of the layout
 $ending-width: 320px; // min width of the layout
 $breakpoints: 1960px, 1440px, 1280px, 1024px, 768px, 480px, 320px; // last one won't be used in loop -> rule for
-$main-container-sizes: 100%, 100%, 100%, 100%, 100%, 100%, 100%;
+$main-container-sizes: 1440px, 1280px, 100%, 100%, 100%, 100%, 100%;
 $gaps-sizes: 50px, 40px, 40px, 30px, 20px, 10px, 5px;
 $size-labels: 'xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs';
 $main-container-class: 'main-container';
