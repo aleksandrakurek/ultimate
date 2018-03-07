@@ -1311,7 +1311,7 @@ th, td {
   background-color: #e5e5e5;
   width: 100%;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: black;
   z-index: 100;
 }
@@ -1319,11 +1319,33 @@ th, td {
 #list .dropdown .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 11px 12px 16px 50px;
   text-decoration: none;
   display: block;
   text-align: left;
   position: relative;
+}
+
+#list .dropdown .dropdown-content a:after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 7px;
+  left: 14px;
+  background: #FFF;
+}
+
+#list .dropdown .dropdown-content a.checked:after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 7px;
+  left: 14px;
+  background: url("../assets/images/checked.png") 50%/55% no-repeat #FFF;
 }
 
 #list .dropdown .dropdown-content a:hover {
@@ -1341,6 +1363,11 @@ th, td {
   line-height: 40px;
   border: none;
   letter-spacing: 1px;
+}
+
+#list .button:hover {
+  background: #e5e5e5;
+  color: #54555a;
 }
 
 #list table {

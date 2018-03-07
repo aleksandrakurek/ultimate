@@ -141,17 +141,41 @@
       background-color: $lightgrey;
       width: 100%;
       font-size: 14px;
-      font-weight: 300;
+      font-weight: 400;
       color: black;
       z-index: 100;
       a {
         float: none;
         color: black;
-        padding: 12px 16px;
+        padding: 11px 12px 16px 50px;
         text-decoration: none;
         display: block;
         text-align: left;
         position: relative;
+        &:after {
+          content: '';
+          display: block;
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          top: 7px;
+          left: 14px;
+          background: $white;
+        }
+
+        &.checked {
+          &:after {
+            content: '';
+            display: block;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 7px;
+            left: 14px;
+            background: url("../assets/images/checked.png") 50% / 55% no-repeat $white;
+          }
+        }
+
         &:hover {
           background-color: #ddd;
         }
@@ -170,6 +194,10 @@
     line-height: 40px;
     border: none;
     letter-spacing: 1px;
+    &:hover {
+      background: $lightgrey;
+      color: $grey;
+    }
   }
   table {
     z-index: 1;
