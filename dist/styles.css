@@ -1537,7 +1537,7 @@ th, td {
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
-  width: 100px;
+  width: 60px;
   height: auto;
 }
 
@@ -1547,7 +1547,7 @@ th, td {
   font-size: 24px;
   font-weight: 600;
   display: inline-block;
-  margin: 0 0 0 150px;
+  margin: 0 0 0 100px;
   height: 60px;
   line-height: 60px;
 }
@@ -1562,27 +1562,39 @@ th, td {
 }
 
 #contact .img-wrapper {
-  margin: 60px 0;
+  margin: 50px 0;
 }
 
 #contact .img-wrapper img {
-  width: 400px;
+  width: 250px;
   height: auto;
 }
 
 #contact p {
   color: #FFF;
   font-size: 18px;
+  line-height: 26px;
+}
+
+#contact .contact-info {
+  margin-top: 150px;
 }
 
 #contact input[type=text], #contact select, #contact textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+#contact input[placeholder], #contact textarea[placeholder] {
+  font-size: 16px;
+}
+
+#contact ::-webkit-input-placeholder {
+  color: #d1d1d1 !important;
 }
 
 #contact input[type=submit] {
@@ -1605,6 +1617,10 @@ th, td {
 #contact input[type=submit]:hover {
   background-color: #FFF;
   color: #000;
+}
+
+#contact #verify::-webkit-input-placeholder {
+  color: #000 !important;
 }
 
 #contact #verify, #contact #confirm {

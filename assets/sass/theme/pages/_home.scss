@@ -334,7 +334,7 @@
       left: 0;
       top: 50%;
       transform: translate(0, -50%);
-      width: 100px;
+      width: 60px;
       height: auto;
     }
     h1 {
@@ -343,7 +343,7 @@
       font-size: 24px;
       font-weight: 600;
       display: inline-block;
-      margin: 0 0 0 150px;
+      margin: 0 0 0 100px;
       height: 60px;
       line-height: 60px;
       &:after {
@@ -357,25 +357,36 @@
     }
   }
   .img-wrapper {
-    margin: 60px 0;
+    margin: 50px 0;
     img {
-      width: 400px;
+      width: 250px;
       height: auto;
     }
   }
   p {
     color: $white;
     font-size: 18px;
+    line-height: 26px;
   }
-
+  .contact-info {
+    margin-top: 150px;
+  }
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    //border: 1px solid #ccc;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+  }
+
+  input[placeholder], textarea[placeholder] {
+    font-size: 16px;
+  }
+
+  ::-webkit-input-placeholder {
+    color: darken($lightgrey, 8%) !important;
   }
 
   input[type=submit] {
@@ -398,6 +409,12 @@
   input[type=submit]:hover {
     background-color: $white;
     color: $black;
+  }
+
+  #verify {
+    &::-webkit-input-placeholder {
+      color: $black !important;
+    }
   }
 
   #verify, #confirm {
