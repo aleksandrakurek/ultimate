@@ -1470,6 +1470,11 @@ th, td {
   background-size: cover;
 }
 
+#draw .img-box img {
+  width: 100%;
+  height: auto;
+}
+
 #draw .info-section .col-6:nth-of-type(1) {
   padding: 30px 15px 0 0;
 }
