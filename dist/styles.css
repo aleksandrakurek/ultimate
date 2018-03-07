@@ -1469,21 +1469,54 @@ th, td {
   background-size: cover;
 }
 
-#draw .info-table {
+#draw .info-section .col-6:nth-of-type(1) {
+  padding: 30px 15px 0 0;
+}
+
+#draw .info-section .col-6:nth-of-type(2) {
+  padding: 30px 0 0 15px;
+}
+
+#draw .info-section .col-6:nth-of-type(3) {
+  padding: 30px 15px 0 0;
+}
+
+#draw .info-section .col-6:nth-of-type(4) {
+  padding: 30px 0 0 15px;
+}
+
+#draw .info-section .info-table {
   background: #60372f;
   color: #FFF;
   font-size: 17px;
   font-weight: 600;
-  margin-top: 200px;
+  margin-top: 250px;
+  text-align: left;
+  padding: 20px 0;
 }
 
-#draw .info-table tr td {
-  padding: 8px 16px;
+#draw .info-section .info-table thead th {
+  text-align: left;
+  padding-left: 40px;
 }
 
-#draw .info-table tr td span {
+#draw .info-section .info-table thead th:last-of-type {
+  padding: 0;
+}
+
+#draw .info-section .info-table tr td {
+  text-align: left;
+  padding: 1px 16px;
+  font-weight: 400;
+}
+
+#draw .info-section .info-table tr td:nth-of-type(2) {
+  padding: 0;
+}
+
+#draw .info-section .info-table tr td span {
   font-weight: 300;
-  margin-right: 40px;
+  margin: 0 20px;
   line-height: 40px;
   background: #2b875e;
   border-radius: 50%;
