@@ -1799,4 +1799,42 @@ header,
   #draw .info-section .info-table tr td span {
     margin: 0 3px;
   }
+  #contact .title h1 {
+    margin: 0 0 0 70px;
+    font-size: 20px;
+  }
+  #contact p {
+    font-size: 15px;
+  }
+  #contact .contact-info {
+    margin-top: 50px;
+  }
+  #contact input[placeholder], #contact textarea[placeholder] {
+    font-size: 16px;
+  }
+  #contact input[type=submit] {
+    font-size: 16px;
+  }
+  #contact .btn-wrapper .button {
+    background: #00a671;
+    margin-top: 20px;
+    border: 1px solid #00a671;
+    text-align: left;
+    padding-left: 20px;
+  }
+  #contact .btn-wrapper .button:after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background: url("../assets/images/sm-arrow.png") 44%/40% no-repeat #00a671;
+  }
 }

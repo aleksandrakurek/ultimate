@@ -228,6 +228,8 @@
       img {
       }
       h1 {
+        margin: 0 0 0 70px;
+        font-size: 20px;
         &:after {
         }
       }
@@ -237,19 +239,23 @@
       }
     }
     p {
+      font-size: 15px;
     }
     .contact-info {
+      margin-top: 50px;
     }
     input[type=text], select, textarea {
     }
 
     input[placeholder], textarea[placeholder] {
+      font-size: 16px;
     }
 
     ::-webkit-input-placeholder {
     }
 
     input[type=submit] {
+      font-size: 16px;
     }
 
     input[type=submit]:hover {
@@ -261,6 +267,26 @@
     }
 
     #verify, #confirm {
+    }
+    .btn-wrapper {
+      .button {
+        background: $lightgreen;
+        margin-top: 20px;
+        border: 1px solid $lightgreen;
+        text-align: left;
+        padding-left: 20px;
+        &:after {
+          content: '';
+          display: block;
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          top: 5px;
+          right: 0;
+          @include rotate-vertically(180deg);
+          background: url("../assets/images/sm-arrow.png") 44% / 40% no-repeat $lightgreen;
+        }
+      }
     }
   }
 }
