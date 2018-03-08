@@ -1,0 +1,23 @@
+.button {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  border: 1px solid $grey;
+  background: $grey;
+  color: white;
+  &.full-width {
+    width: 100%;
+  }
+  &.square {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background: $green;
+    border: 1px solid $green;
+  }
+}

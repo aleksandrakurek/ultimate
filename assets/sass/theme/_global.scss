@@ -57,3 +57,16 @@ input, textarea {
   text-align: left;
 }
 
+table {
+  border-spacing: 0;
+  width: 100%;
+  //border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+
+
