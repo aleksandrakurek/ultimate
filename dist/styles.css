@@ -1263,6 +1263,16 @@ header,
   margin: 0 20px;
 }
 
+#slider .controller h1 {
+  text-align: center;
+  color: #FFF;
+  font-size: 22px;
+  margin: 8px 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
 #slider .controller .slider-arrow {
   cursor: pointer;
 }
@@ -1493,14 +1503,21 @@ header,
 }
 
 #list .pagination .btn-wrapper .button {
+  border: 2px solid #e5e5e5;
   width: 40px;
   background: #e5e5e5;
   color: #54555a;
 }
 
 #list .pagination .btn-wrapper .button.current {
+  border: 2px solid #00a671;
   background: #00a671 !important;
   color: #FFF;
+}
+
+#list .pagination .btn-wrapper .button:hover {
+  border: 2px solid #00a671;
+  background: #FFF;
 }
 
 #draw {
@@ -1681,5 +1698,86 @@ header,
     padding: 45px 45px 60px 45px;
     border: none;
     display: inline-block;
+  }
+}
+
+@media (max-width: 470px) {
+  #list {
+    padding: 50px 0;
+  }
+  #list .dropdown-box {
+    margin-left: 0 !important;
+    margin-bottom: 20px;
+  }
+  #list .dropdown:hover .dropbtn {
+    font-size: 13px;
+  }
+  #list .table-wrapper {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: scroll;
+  }
+  #list .table-wrapper .table-nav .img-box {
+    margin: 20px 20px 20px 0;
+    height: 30px;
+    width: 30px;
+    background: #2b875e;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    right: -20px;
+    background: #e5e5e5;
+  }
+  #list .table-wrapper .table-nav .img-box.active {
+    background: #00a671;
+  }
+  #list .table-wrapper .table-nav .img-box.next {
+    top: 55px;
+  }
+  #list .table-wrapper .table-nav .img-box.next img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(270deg) scale(0.8);
+  }
+  #list .table-wrapper .table-nav .img-box.prev {
+    top: 85px;
+  }
+  #list .table-wrapper .table-nav .img-box.prev img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.8);
+  }
+  #list table {
+    margin-top: 50px;
+    overflow: scroll;
+    font-size: 12px;
+  }
+  #list table thead th {
+    padding-bottom: 50px;
+    padding-right: 14px;
+    padding-left: 0;
+  }
+  #list table thead th img.up {
+    top: 70px;
+    right: 50%;
+  }
+  #list table thead th img.down {
+    top: 84px;
+    right: calc(50% + 1px);
+  }
+  #list table thead:after {
+    top: 100px;
+  }
+  #list table tbody td {
+    padding: 8px;
+  }
+  #list .pagination .btn-wrapper .button {
+    width: 30px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
   }
 }

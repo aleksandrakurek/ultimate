@@ -60,7 +60,15 @@
     position: absolute;
     bottom: 0;
     margin: 0 20px;
-
+    h1 {
+      text-align: center;
+      color: $white;
+      font-size: 22px;
+      margin: 8px 0;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
     .slider-arrow {
       cursor: pointer;
       &.left {
@@ -260,12 +268,18 @@
       display: inline-block;
       padding-left: 20px;
       .button {
+        border:2px solid $lightgrey;
         width: 40px;
         background: $lightgrey;
         color: $grey;
         &.current {
+          border:2px solid $lightgreen;
           background: $lightgreen !important;
           color: $white;
+        }
+        &:hover{
+          border:2px solid $lightgreen;
+          background: $white;
         }
       }
     }
