@@ -82,3 +82,15 @@ header,
 }
 
 /* END STICKY MENU */
+
+/* BURGER MENU */
+.open-burger {
+  .menu-items-container {
+    margin-top: 65px;
+    .menu-item {
+      display: inline !important;
+    }
+  }
+}
+
+/* END BURGER MENU */

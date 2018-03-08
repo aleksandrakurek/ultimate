@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Stowarzyszenie Budowniczych Domów i Mieszkań</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="keywords" content=""/>
@@ -23,14 +23,14 @@
                 <div class="menu-container">
                     <nav class="menu">
                         <div id="burger" class="hide show-md">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <div class="img-box">
+                                <img src="assets/images/sm-arrow.png" alt="menu">
+                            </div>
                         </div>
-                        <div class="dropdown-menu hide-md ">
+                        <div class="dropdown-menu hide-md" id="burger-content">
                             <div class="menu-items-container clearfix">
-                                <div class="menu-item hightlight">
-                                    <a href="#slider" title="Inwestycja"> Inwestycja </a>
+                                <div class="menu-item">
+                                    <a href="#slider" title="Inwestycja">Inwestycja</a>
                                 </div>
                                 <div class="menu-item">
                                     <a href="#list" title="Dostępność">Dostępność</a>
@@ -56,6 +56,7 @@
             <div class="slider-arrow right">
                 <img src="assets/images/arrow.png" alt="arrow right">
             </div>
+        </div>
     </section>
     <section id="list">
         <div class="main-container">
@@ -114,32 +115,34 @@
 
                 <table>
                     <thead class="table-header">
-                    <th>nr budynku <br> mieszkania
-                        <img src="assets/images/arr-grey.png" alt="increase" class="up">
-                        <img src="assets/images/arr-green.png" alt="decrease" class="active down">
-                    </th>
-                    <th>kondygnacja
-                        <img src="assets/images/arr-grey.png" alt="increase" class="up">
-                        <img src="assets/images/arr-grey.png" alt="decrease" class="down">
-                    </th>
-                    <th>powierzchnia <br>użytkowa
-                        <img src="assets/images/arr-grey.png" alt="increase" class="up">
-                        <img src="assets/images/arr-grey.png" alt="decrease" class="down">
-                    </th>
-                    <th>powierzchnia <br> ogródka/strychu
-                        <img src="assets/images/arr-grey.png" alt="increase" class="up">
-                        <img src="assets/images/arr-grey.png" alt="decrease" class="down">
-                    </th>
-                    <th>cena <br>brutto
-                        <img src="assets/images/arr-grey.png" alt="increase" class="up">
-                        <img src="assets/images/arr-grey.png" alt="decrease" class="down">
-                    </th>
-                    <th>plan
-                    </th>
-                    <th>status
-                        <img src="assets/images/arr-grey.png" alt="increase" class="up">
-                        <img src="assets/images/arr-grey.png" alt="decrease" class="down">
-                    </th>
+                    <tr>
+                        <th>nr budynku <br> mieszkania
+                            <img src="assets/images/arr-grey.png" alt="increase" class="up">
+                            <img src="assets/images/arr-green.png" alt="decrease" class="active down">
+                        </th>
+                        <th>kondygnacja
+                            <img src="assets/images/arr-grey.png" alt="increase" class="up">
+                            <img src="assets/images/arr-grey.png" alt="decrease" class="down">
+                        </th>
+                        <th>powierzchnia <br>użytkowa
+                            <img src="assets/images/arr-grey.png" alt="increase" class="up">
+                            <img src="assets/images/arr-grey.png" alt="decrease" class="down">
+                        </th>
+                        <th>powierzchnia <br> ogródka/strychu
+                            <img src="assets/images/arr-grey.png" alt="increase" class="up">
+                            <img src="assets/images/arr-grey.png" alt="decrease" class="down">
+                        </th>
+                        <th>cena <br>brutto
+                            <img src="assets/images/arr-grey.png" alt="increase" class="up">
+                            <img src="assets/images/arr-grey.png" alt="decrease" class="down">
+                        </th>
+                        <th>plan
+                        </th>
+                        <th>status
+                            <img src="assets/images/arr-grey.png" alt="increase" class="up">
+                            <img src="assets/images/arr-grey.png" alt="decrease" class="down">
+                        </th>
+                    </tr>
                     </thead>
                     <tr>
                         <td>P11A</td>
@@ -287,8 +290,10 @@
 
                     <table class="info-table">
                         <thead>
-                        <th>powierzchnia użytkowa</th>
-                        <th>64,20m<sup>2</sup></th>
+                        <tr>
+                            <th>powierzchnia użytkowa</th>
+                            <th>64,20m<sup>2</sup></th>
+                        </tr>
                         </thead>
                         <tr>
                             <td>
