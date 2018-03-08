@@ -1780,4 +1780,23 @@ header,
     height: 30px;
     line-height: 30px;
   }
+  #draw .img-box {
+    margin-bottom: 40px;
+  }
+  #draw .info-section .button {
+    margin-bottom: 10px;
+  }
+  #draw .info-section .button.full-width {
+    font-size: 16px;
+  }
+  #draw .info-section .info-table {
+    margin-top: 170px;
+    font-size: 15px;
+  }
+  #draw .info-section .info-table tr td {
+    padding: 1px 6px;
+  }
+  #draw .info-section .info-table tr td span {
+    margin: 0 3px;
+  }
 }

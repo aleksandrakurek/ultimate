@@ -179,6 +179,7 @@
 
   #draw {
     .img-box {
+      margin-bottom: 40px;
       img {
       }
     }
@@ -194,10 +195,14 @@
         }
       }
       .button {
+        margin-bottom: 10px;
         &.full-width {
+          font-size: 16px;
         }
       }
       .info-table {
+        margin-top: 170px;
+        font-size: 15px;
         thead {
           th {
             &:last-of-type {
@@ -206,9 +211,11 @@
         }
         tr {
           td {
+            padding: 1px 6px;
             &:nth-of-type(2) {
             }
             span {
+              margin: 0 3px;
             }
           }
         }
