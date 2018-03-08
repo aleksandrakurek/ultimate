@@ -1177,6 +1177,20 @@ th, td {
   padding: 16px;
 }
 
+/*STICKY MENU*/
+.main-nav,
+.main {
+  position: relative;
+}
+
+header,
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* END STICKY MENU */
 #header-info {
   background-color: #60372f;
 }
