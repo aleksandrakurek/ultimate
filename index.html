@@ -127,29 +127,30 @@
                     <table id="data">
                         <thead class="table-header">
                         <tr>
-                            <th>nr budynku <br> mieszkania
+                            <th id="sortNr" >nr budynku <br> mieszkania
                                 <img src="assets/images/arr-grey.png" alt="increase" class="up">
-                                <img src="assets/images/arr-green.png" alt="decrease" class="active down">
+                                <img src="assets/images/arr-grey.png" alt="decrease" class="down">
+                                <!--<img src="assets/images/arr-green.png" alt="decrease" class="down">-->
                             </th>
-                            <th>kondygnacja
+                            <th id="sortFloor">kondygnacja
                                 <img src="assets/images/arr-grey.png" alt="increase" class="up">
                                 <img src="assets/images/arr-grey.png" alt="decrease" class="down">
                             </th>
-                            <th>powierzchnia <br>użytkowa
+                            <th id="sortSurface">powierzchnia <br>użytkowa
                                 <img src="assets/images/arr-grey.png" alt="increase" class="up">
                                 <img src="assets/images/arr-grey.png" alt="decrease" class="down">
                             </th>
-                            <th>powierzchnia <br> ogródka/strychu
+                            <th id="sortGarden">powierzchnia <br> ogródka/strychu
                                 <img src="assets/images/arr-grey.png" alt="increase" class="up">
                                 <img src="assets/images/arr-grey.png" alt="decrease" class="down">
                             </th>
-                            <th>cena <br>brutto
+                            <th id="sortPrice">cena <br>brutto
                                 <img src="assets/images/arr-grey.png" alt="increase" class="up">
                                 <img src="assets/images/arr-grey.png" alt="decrease" class="down">
                             </th>
                             <th>plan
                             </th>
-                            <th>status
+                            <th id="sortStatus">status
                                 <img src="assets/images/arr-grey.png" alt="increase" class="up">
                                 <img src="assets/images/arr-grey.png" alt="decrease" class="down">
                             </th>
@@ -159,14 +160,14 @@
                         <tr>
                             <td>P11A</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>24,32m<sup>2</sup></td>
                             <td>ogródek 14m<sup>2</sup></td>
                             <td>255000zł</td>
                             <td>pobierz</td>
                             <td class="accent">wolny</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P11B</td>
                             <td>parter</td>
                             <td>64,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
@@ -175,43 +176,43 @@
                             <td>rezerwacja</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P12A</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>65,32m<sup>2</sup></td>
                             <td>ogródek 15m<sup>2</sup></td>
                             <td>259000zł</td>
                             <td>pobierz</td>
                             <td class="accent">wolny</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P12B</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>624,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="accent">wolny</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P13A</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>67,32m<sup>2</sup></td>
                             <td>ogródek 10m<sup>2</sup></td>
                             <td>251000zł</td>
                             <td>pobierz</td>
                             <td class="accent">wolny</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P13B</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>9,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>253000zł</td>
                             <td>pobierz</td>
                             <td class="accent">wolny</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P14A</td>
                             <td>parter</td>
                             <td>64,32m<sup>2</sup></td>
                             <td>ogródek 12m<sup>2</sup></td>
@@ -220,7 +221,88 @@
                             <td class="accent">wolny</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P14B</td>
+                            <td>parter</td>
+                            <td>24,32m<sup>2</sup></td>
+                            <td>strych 15m<sup>2</sup></td>
+                            <td>252000zł</td>
+                            <td>pobierz</td>
+                            <td class="sold">sprzedany</td>
+                        </tr>
+                        <tr>
+                            <td>P15A</td>
+                            <td>parter</td>
+                            <td>54,32m<sup>2</sup></td>
+                            <td>strych 15m<sup>2</sup></td>
+                            <td>252000zł</td>
+                            <td>pobierz</td>
+                            <td class="sold">sprzedany</td>
+                        </tr>
+                        <tr>
+                            <td>P15B</td>
+                            <td>parter</td>
+                            <td>84,32m<sup>2</sup></td>
+                            <td>strych 15m<sup>2</sup></td>
+                            <td>252000zł</td>
+                            <td>pobierz</td>
+                            <td class="sold">sprzedany</td>
+                        </tr>
+                        <tr>
+                            <td>P16A</td>
+                            <td>parter</td>
+                            <td>64,92m<sup>2</sup></td>
+                            <td>strych 15m<sup>2</sup></td>
+                            <td>252000zł</td>
+                            <td>pobierz</td>
+                            <td class="sold">sprzedany</td>
+                        </tr>
+                        <tr>
+                            <td>P16B</td>
+                            <td>parter</td>
+                            <td>68,32m<sup>2</sup></td>
+                            <td>strych 15m<sup>2</sup></td>
+                            <td>252000zł</td>
+                            <td>pobierz</td>
+                            <td class="sold">sprzedany</td>
+                        </tr>
+                        <tr>
+                            <td>P17A</td>
+                            <td>parter</td>
+                            <td>64,39m<sup>2</sup></td>
+                            <td>strych 15m<sup>2</sup></td>
+                            <td>252000zł</td>
+                            <td>pobierz</td>
+                            <td class="sold">sprzedany</td>
+                        </tr>
+                        <tr>
+                            <td>P18B</td>
+                            <td>parter</td>
+                            <td>63,32m<sup>2</sup></td>
+                            <td>strych 15m<sup>2</sup></td>
+                            <td>252000zł</td>
+                            <td>pobierz</td>
+                            <td class="sold">sprzedany</td>
+                        </tr>
+                        <tr>
+                            <td>P19A</td>
+                            <td>parter</td>
+                            <td>24,32m<sup>2</sup></td>
+                            <td>strych 15m<sup>2</sup></td>
+                            <td>252000zł</td>
+                            <td>pobierz</td>
+                            <td class="sold">sprzedany</td>
+                        </tr>
+                        <tr>
+                            <td>P19B</td>
+                            <td>parter</td>
+                            <td>63,32m<sup>2</sup></td>
+                            <td>strych 15m<sup>2</sup></td>
+                            <td>252000zł</td>
+                            <td>pobierz</td>
+                            <td class="sold">sprzedany</td>
+                        </tr>
+                        <tr>
+                            <td>P20A</td>
                             <td>parter</td>
                             <td>64,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
@@ -229,189 +311,108 @@
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P20B</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>94,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P21A</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>4,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P21B</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>14,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P22A</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>62,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P22B</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>13,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P23A</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>24,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P23B</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>84,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P24A</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>94,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P24B</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>4,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P25A</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>60,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P25B</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>62,32m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>
                             <td class="sold">sprzedany</td>
                         </tr>
                         <tr>
-                            <td>P11A</td>
+                            <td>P26A</td>
                             <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
-                            <td>strych 15m<sup>2</sup></td>
-                            <td>252000zł</td>
-                            <td>pobierz</td>
-                            <td class="sold">sprzedany</td>
-                        </tr>
-                        <tr>
-                            <td>P11A</td>
-                            <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
-                            <td>strych 15m<sup>2</sup></td>
-                            <td>252000zł</td>
-                            <td>pobierz</td>
-                            <td class="sold">sprzedany</td>
-                        </tr>
-                        <tr>
-                            <td>P11A</td>
-                            <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
-                            <td>strych 15m<sup>2</sup></td>
-                            <td>252000zł</td>
-                            <td>pobierz</td>
-                            <td class="sold">sprzedany</td>
-                        </tr>
-                        <tr>
-                            <td>P11A</td>
-                            <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
-                            <td>strych 15m<sup>2</sup></td>
-                            <td>252000zł</td>
-                            <td>pobierz</td>
-                            <td class="sold">sprzedany</td>
-                        </tr>
-                        <tr>
-                            <td>P11A</td>
-                            <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
-                            <td>strych 15m<sup>2</sup></td>
-                            <td>252000zł</td>
-                            <td>pobierz</td>
-                            <td class="sold">sprzedany</td>
-                        </tr>
-                        <tr>
-                            <td>P11A</td>
-                            <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
-                            <td>strych 15m<sup>2</sup></td>
-                            <td>252000zł</td>
-                            <td>pobierz</td>
-                            <td class="sold">sprzedany</td>
-                        </tr>
-                        <tr>
-                            <td>P11A</td>
-                            <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
-                            <td>strych 15m<sup>2</sup></td>
-                            <td>252000zł</td>
-                            <td>pobierz</td>
-                            <td class="sold">sprzedany</td>
-                        </tr>
-                        <tr>
-                            <td>P11A</td>
-                            <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
-                            <td>strych 15m<sup>2</sup></td>
-                            <td>252000zł</td>
-                            <td>pobierz</td>
-                            <td class="sold">sprzedany</td>
-                        </tr>
-                        <tr>
-                            <td>P11A</td>
-                            <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
-                            <td>strych 15m<sup>2</sup></td>
-                            <td>252000zł</td>
-                            <td>pobierz</td>
-                            <td class="sold">sprzedany</td>
-                        </tr>
-                        <tr>
-                            <td>P11A</td>
-                            <td>parter</td>
-                            <td>64,32m<sup>2</sup></td>
+                            <td>64,12m<sup>2</sup></td>
                             <td>strych 15m<sup>2</sup></td>
                             <td>252000zł</td>
                             <td>pobierz</td>

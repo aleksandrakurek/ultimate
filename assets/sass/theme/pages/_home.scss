@@ -202,18 +202,11 @@
           right: 21px;
           cursor: pointer;
           &.up {
-            &.active {
-              @include rotate-vertically(180deg);
-            }
           }
           &.down {
             top: 40px;
             right: 21px;
             @include rotate-vertically(180deg);
-
-            &.active {
-              @include rotate-vertically(360deg);
-            }
           }
         }
       }

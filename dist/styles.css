@@ -1424,14 +1424,6 @@ header,
   cursor: pointer;
 }
 
-#list table thead th img.up.active {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
 #list table thead th img.down {
   top: 40px;
   right: 21px;
@@ -1440,14 +1432,6 @@ header,
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-}
-
-#list table thead th img.down.active {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
 }
 
 #list table thead:before {
