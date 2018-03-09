@@ -1548,6 +1548,10 @@ header,
   padding: 30px 0 0 15px;
 }
 
+#draw .info-section .button {
+  cursor: pointer;
+}
+
 #draw .info-section .info-table {
   background: #60372f;
   color: #FFF;

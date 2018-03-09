@@ -268,17 +268,17 @@
       display: inline-block;
       padding-left: 20px;
       .button {
-        border:2px solid $lightgrey;
+        border: 2px solid $lightgrey;
         width: 40px;
         background: $lightgrey;
         color: $grey;
         &.current {
-          border:2px solid $lightgreen;
+          border: 2px solid $lightgreen;
           background: $lightgreen !important;
           color: $white;
         }
-        &:hover{
-          border:2px solid $lightgreen;
+        &:hover {
+          border: 2px solid $lightgreen;
           background: $white;
         }
       }
@@ -314,6 +314,7 @@
       }
     }
     .button {
+      cursor: pointer;
       &.full-width {
       }
     }
