@@ -264,25 +264,26 @@
     margin: 30px auto;
     position: relative;
 
-    .btn-wrapper {
-      display: inline-block;
-      padding-left: 20px;
-      .button {
-        border: 2px solid $lightgrey;
-        width: 40px;
-        background: $lightgrey;
-        color: $grey;
-        &.current {
-          border: 2px solid $lightgreen;
-          background: $lightgreen !important;
-          color: $white;
-        }
-        &:hover {
-          border: 2px solid $lightgreen;
-          background: $white;
-        }
+    //.btn-wrapper {
+    //display: inline-block;
+    //padding-left: 20px;
+    .button {
+      cursor: pointer;
+      border: 2px solid $lightgrey;
+      width: 40px;
+      background: $lightgrey;
+      color: $grey;
+      &.current {
+        border: 2px solid $lightgreen;
+        background: $lightgreen !important;
+        color: $white;
+      }
+      &:hover {
+        border: 2px solid $lightgreen;
+        background: $white;
       }
     }
+    //}
   }
 }
 

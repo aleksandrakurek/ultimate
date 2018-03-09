@@ -22,6 +22,32 @@ $('#burger').click(function () {
     $('#burger-content').toggleClass('open-burger');
 });
 
+/*List*/
+
+/*pagination*/
+$('#data').after('<div id="pagNav" class="pagination center"></div>');
+const rowsShown = 8;
+let rowsTotal = $('#data tbody tr').length;
+let numPages = rowsTotal/rowsShown;
+for(i = 0;i < numPages;i++) {
+    let pageNum = i + 1;
+    $('#pagNav').append('<a href="#" class="button square" rel="'+i+'">'+pageNum+'</a> ');
+}
+
+$('#data tbody tr').hide();
+$('#data tbody tr').slice(0, rowsShown).show();
+$('#pagNav a:first').addClass('active current');
+$('#pagNav a').bind('click', function(){
+
+    $('#pagNav a').removeClass('active current');
+    $(this).addClass('active current');
+    let currPage = $(this).attr('rel');
+    let startItem = currPage * rowsShown;
+    let endItem = startItem + rowsShown;
+    $('#data tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
+    css('display','table-row').animate({opacity:1}, 300);
+});
+
 
 /* Draws */
 

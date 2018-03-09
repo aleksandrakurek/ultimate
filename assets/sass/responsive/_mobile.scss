@@ -164,16 +164,16 @@
     }
     .pagination {
 
-      .btn-wrapper {
-        .button {
-          width: 30px;
-          font-size: 12px;
-          height: 30px;
-          line-height: 30px;
-          &.current {
-          }
+      //.btn-wrapper {
+      .button {
+        width: 30px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        &.current {
         }
       }
+      //}
     }
   }
 
