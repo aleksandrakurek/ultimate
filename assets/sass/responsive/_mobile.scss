@@ -1,0 +1,491 @@
+@media (max-width: 470px) {
+  #header-info {
+    .menu {
+      #burger {
+        .img-box {
+          img {
+          }
+        }
+      }
+      .dropdown-menu {
+        .menu-items-container {
+          .menu-item {
+            &:hover {
+              a {
+              }
+            }
+            a {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #slider {
+    .controller {
+      h1 {
+      }
+      .slider-arrow {
+        &.left {
+        }
+        &.right {
+        }
+      }
+    }
+  }
+
+  #list {
+    padding: 50px 0;
+    .dropdown-box {
+      margin-left: 0 !important;
+      margin-bottom: 20px;
+    }
+    .dropdown {
+      &:hover {
+        .dropbtn {
+          font-size: 13px;
+          &:after {
+          }
+        }
+      }
+      .dropbtn {
+        &:after {
+        }
+      }
+      .dropdown-content {
+        a {
+          &:after {
+          }
+          &.checked {
+            &:after {
+            }
+          }
+          &:hover {
+          }
+        }
+      }
+    }
+
+    .dropdown:hover .dropdown-content {
+    }
+
+    .button {
+      &:hover {
+      }
+    }
+
+    .table-wrapper {
+      position: relative;
+      height: auto;
+      width: 100%;
+      overflow: scroll;
+      .table-nav {
+        .img-box {
+          margin: 20px 20px 20px 0;
+          height: 30px;
+          width: 30px;
+          background: #2b875e;
+          cursor: pointer;
+          position: absolute;
+          z-index: 10;
+          right: -20px;
+          background: $lightgrey;
+          &.active {
+            background: $lightgreen;
+          }
+          &.next {
+            top: 55px;
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) rotate(270deg) scale(0.8);
+            }
+          }
+          &.prev {
+            top: 85px;
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) rotate(90deg) scale(0.8);
+            }
+          }
+
+        }
+      }
+    }
+    table {
+      margin-top: 50px;
+      overflow: scroll;
+      font-size: 12px;
+      thead {
+        th {
+          padding-bottom: 50px;
+          padding-right: 14px;
+          padding-left: 0;
+          img {
+            &.up {
+              top: 70px;
+              right: 50%;
+              &.active {
+              }
+            }
+            &.down {
+              top: 84px;
+              right: calc(50% + 1px);
+              &.active {
+              }
+            }
+          }
+        }
+        &:before {
+        }
+        &:after {
+          top: 100px;
+        }
+        &:hover {
+        }
+      }
+      tbody {
+        tr:hover {
+        }
+        td {
+          padding: 8px;
+          &:last-of-type {
+          }
+          &.accent {
+          }
+          &.sold {
+          }
+        }
+      }
+    }
+    .pagination {
+
+      .btn-wrapper {
+        .button {
+          width: 30px;
+          font-size: 12px;
+          height: 30px;
+          line-height: 30px;
+          &.current {
+          }
+        }
+      }
+    }
+  }
+
+  #draw {
+    .img-box {
+      margin-bottom: 40px;
+      img {
+      }
+    }
+    .info-section {
+      .col-6 {
+        &:nth-of-type(1) {
+        }
+        &:nth-of-type(2) {
+        }
+        &:nth-of-type(3) {
+        }
+        &:nth-of-type(4) {
+        }
+      }
+      .button {
+        margin-bottom: 10px;
+        &.full-width {
+          font-size: 16px;
+        }
+      }
+      .info-table {
+        margin-top: 170px;
+        font-size: 15px;
+        thead {
+          th {
+            &:last-of-type {
+            }
+          }
+        }
+        tr {
+          td {
+            padding: 1px 6px;
+            &:nth-of-type(2) {
+            }
+            span {
+              margin: 0 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #contact {
+    .title {
+      img {
+      }
+      h1 {
+        margin: 0 0 0 70px;
+        font-size: 20px;
+        &:after {
+        }
+      }
+    }
+    .img-wrapper {
+      img {
+      }
+    }
+    p {
+      font-size: 15px;
+    }
+    .contact-info {
+      margin-top: 50px;
+    }
+    input[type=text], select, textarea {
+    }
+
+    input[placeholder], textarea[placeholder] {
+      font-size: 16px;
+    }
+
+    ::-webkit-input-placeholder {
+    }
+
+    input[type=submit] {
+      font-size: 16px;
+    }
+
+    input[type=submit]:hover {
+    }
+
+    #verify {
+      &::-webkit-input-placeholder {
+      }
+    }
+
+    #verify, #confirm {
+    }
+    .btn-wrapper {
+      .button {
+        background: $lightgreen;
+        margin-top: 20px;
+        border: 1px solid $lightgreen;
+        text-align: left;
+        padding-left: 20px;
+        &:after {
+          content: '';
+          display: block;
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          top: 5px;
+          right: 0;
+          @include rotate-vertically(180deg);
+          background: url("../assets/images/sm-arrow.png") 44% / 40% no-repeat $lightgreen;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #header-info {
+    .menu {
+      #burger {
+        .img-box {
+          img {
+          }
+        }
+      }
+      .dropdown-menu {
+        .menu-items-container {
+          .menu-item {
+            &:hover {
+              a {
+              }
+            }
+            a {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #slider {
+
+    .controller {
+      h1 {
+      }
+      .slider-arrow {
+        &.left {
+        }
+        &.right {
+        }
+      }
+    }
+  }
+
+  #list {
+    .dropdown {
+      &:hover {
+        .dropbtn {
+          &:after {
+          }
+        }
+      }
+      .dropbtn {
+        &:after {
+        }
+      }
+      .dropdown-content {
+        a {
+          &:after {
+          }
+          &.checked {
+            &:after {
+            }
+          }
+          &:hover {
+          }
+        }
+      }
+    }
+
+    .dropdown:hover .dropdown-content {
+    }
+
+    .button {
+      &:hover {
+      }
+    }
+
+    table {
+      thead {
+        th {
+          img {
+            &.up {
+              &.active {
+              }
+            }
+            &.down {
+
+              &.active {
+              }
+            }
+          }
+        }
+        &:before {
+        }
+        &:after {
+        }
+        &:hover {
+        }
+      }
+      tbody {
+        tr:hover {
+        }
+        td {
+          &:last-of-type {
+          }
+          &.accent {
+          }
+          &.sold {
+          }
+        }
+      }
+    }
+    .pagination {
+
+      .btn-wrapper {
+        .button {
+          &.current {
+          }
+        }
+      }
+    }
+  }
+
+  #draw {
+    .img-box {
+      img {
+      }
+    }
+    .info-section {
+      .col-6 {
+        &:nth-of-type(1) {
+        }
+        &:nth-of-type(2) {
+        }
+        &:nth-of-type(3) {
+        }
+        &:nth-of-type(4) {
+        }
+      }
+      .button {
+        &.full-width {
+        }
+      }
+      .info-table {
+        thead {
+          th {
+            &:last-of-type {
+            }
+          }
+        }
+        tr {
+          td {
+            &:nth-of-type(2) {
+            }
+            span {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #contact {
+    .title {
+      img {
+      }
+      h1 {
+        &:after {
+        }
+      }
+    }
+    .img-wrapper {
+      img {
+      }
+    }
+    p {
+    }
+    .contact-info {
+    }
+    input[type=text], select, textarea {
+    }
+
+    input[placeholder], textarea[placeholder] {
+    }
+
+    ::-webkit-input-placeholder {
+    }
+
+    input[type=submit] {
+    }
+
+    input[type=submit]:hover {
+    }
+
+    #verify {
+      &::-webkit-input-placeholder {
+      }
+    }
+
+    #verify, #confirm {
+    }
+  }
+}

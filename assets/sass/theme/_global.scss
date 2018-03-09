@@ -14,7 +14,7 @@ body, html {
   height: 100%;
 }
 
-ul,ol {
+ul, ol {
   padding: 0;
 }
 
@@ -57,3 +57,40 @@ input, textarea {
   text-align: left;
 }
 
+table {
+  border-spacing: 0;
+  width: 100%;
+  //border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+/*STICKY MENU*/
+.main-nav,
+.main {
+  position: relative;
+}
+
+header,
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* END STICKY MENU */
+
+/* BURGER MENU */
+.open-burger {
+  .menu-items-container {
+    margin-top: 65px;
+    .menu-item {
+      display: inline !important;
+    }
+  }
+}
+
+/* END BURGER MENU */
