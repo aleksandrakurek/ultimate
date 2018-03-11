@@ -22,10 +22,71 @@ $('#burger').click(function () {
     $('#burger-content').toggleClass('open-burger');
 });
 
+/*Slider*/
+// var slideIndex = 1;
+// showSlides(slideIndex);
+//
+// function plusSlides(n) {
+//     showSlides(slideIndex += n);
+// }
+//
+// function currentSlide(n) {
+//     showSlides(slideIndex = n);
+// }
+//
+// function showSlides(n) {
+//     var i;
+//     var slides = document.getElementsByClassName("mySlides");
+//     var dots = document.getElementsByClassName("dot");
+//     if (n > slides.length) {
+//         slideIndex = 1
+//     }
+//     if (n < 1) {
+//         slideIndex = slides.length
+//     }
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";
+//     }
+//     for (i = 0; i < dots.length; i++) {
+//         dots[i].className = dots[i].className.replace(" active", "");
+//     }
+//     slides[slideIndex - 1].style.display = "block";
+//     dots[slideIndex - 1].className += " active";
+// }
+
 /*List*/
+/* Filter list*/
+
+let toFilter = $('.dropdown').find('span'),
+    filterBtn = $('#filterBtn'),
+    tableElements = $('#data tbody tr td');
+
+toFilter.click(function () {
+    $(this).toggleClass("checked");
+});
+
+filterBtn.click(function () {
+
+    let isChecked = $(".checked");
+    if (isChecked.length !== 0) {
+        isChecked.each(function () {
+            let filterAttr = $(this).attr("data-name"),
+                toShow = tableElements.filter('[data-name="' + filterAttr + '"]'),
+                rowToShow = toShow.parent();
+
+            rowToShow.css("background-color", "tomato");
+        });
+    }
+    else{
+        tableElements.css("background-color", "white");
+    }
+
+});
+
 
 /* table sort */
 let table = $('#data');
+
 
 $('#sortNr, #sortFloor, #sortSurface, #sortGarden, #sortPrice, #sortStatus ')
     .each(function () {
@@ -39,17 +100,17 @@ $('#sortNr, #sortFloor, #sortSurface, #sortGarden, #sortPrice, #sortStatus ')
             let imgUp = $(this).find('.up');
             let imgDwn = $(this).find('.down');
 
-            if(imgUp.attr("src") === "assets/images/arr-green.png"){
-                imgUp.attr("src","assets/images/arr-grey.png");
-                imgUp.css("transform","rotate(0)");
-                imgDwn.attr("src","assets/images/arr-green.png");
-                imgDwn.css("transform","rotate(360deg)");
+            if (imgUp.attr("src") === "assets/images/arr-green.png") {
+                imgUp.attr("src", "assets/images/arr-grey.png");
+                imgUp.css("transform", "rotate(0)");
+                imgDwn.attr("src", "assets/images/arr-green.png");
+                imgDwn.css("transform", "rotate(360deg)");
 
-            }else{
-                imgUp.attr("src","assets/images/arr-green.png");
-                imgUp.css("transform","rotate(180deg)");
-                imgDwn.attr("src","assets/images/arr-grey.png");
-                imgDwn.css("transform","rotate(180deg)");
+            } else {
+                imgUp.attr("src", "assets/images/arr-green.png");
+                imgUp.css("transform", "rotate(180deg)");
+                imgDwn.attr("src", "assets/images/arr-grey.png");
+                imgDwn.css("transform", "rotate(180deg)");
             }
             table.find('td').filter(function () {
                 return $(this).index() === thIndex;

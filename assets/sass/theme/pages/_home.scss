@@ -134,7 +134,8 @@
       font-weight: 400;
       color: black;
       z-index: 100;
-      a {
+      span {
+        cursor: pointer;
         float: none;
         color: black;
         padding: 11px 12px 16px 50px;
@@ -182,6 +183,7 @@
     line-height: 40px;
     border: none;
     letter-spacing: 1px;
+    cursor: pointer;
     &:hover {
       background: $lightgrey;
       color: $grey;
