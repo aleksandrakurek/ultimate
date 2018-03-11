@@ -1255,9 +1255,23 @@ header,
 #slider {
   width: 100%;
   margin: 0;
-  background: url("../assets/images/bg.png") center no-repeat;
   height: 1080px;
   background-size: cover;
+}
+
+#slider[data-slider="1"] {
+  background: url("../assets/images/bg.png") center no-repeat;
+  animation: slider 5s;
+}
+
+#slider[data-slider="2"] {
+  background: url("../assets/images/bg-contact.jpg") center no-repeat;
+  animation: slider 5s;
+}
+
+#slider[data-slider="3"] {
+  background: url("../assets/images/bg-draw.jpg") center no-repeat;
+  animation: slider 5s;
 }
 
 #slider .controller {
