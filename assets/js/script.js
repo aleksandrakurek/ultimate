@@ -26,7 +26,6 @@ $('#burger').click(function () {
 
 function changeSlide() {
     let sliderNum = $("#slider").attr("data-slider");
-    console.log(sliderNum);
 
     if (sliderNum == "1") {
         $("#slider").attr("data-slider", "2");
@@ -179,3 +178,27 @@ floorRight.click(function () {
 });
 
 
+/*Form validation*/
+
+
+function formValidate() {
+    if ($("#verify").val() === $("#confirm").val()) {
+        console.log("kod sie zgadza");
+        if ($("#name").val() !== '' && $("#email").val() !== '' && $("#message").val() !== '') {
+            console.log("wszystkie pola zostaly wypelnione")
+        } else {
+            console.log("cos poszlo nie tak");
+            event.preventDefault();
+        }
+    } else {
+        alert("Błędny kod");
+        event.preventDefault();
+    }
+
+
+}
+
+$("#sendMsg").click(function () {
+    formValidate();
+
+});
