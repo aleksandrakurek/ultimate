@@ -51,7 +51,7 @@
   width: 100%;
   margin: 0;
   height: 1080px;
-  background-size: cover;
+  background-size: cover !important;
 
   &[data-slider="1"]{
     background: url("../assets/images/bg.png") center no-repeat;

@@ -54,7 +54,7 @@
                 <img src="assets/images/arrow.png" alt="arrow left">
             </div>
             <h1 class="hide-xxl show-md">ul. Floriańska, Kraków </h1>
-            <div id="sliderArrowR" class="slider-arrow right" style="background:red">
+            <div id="sliderArrowR" class="slider-arrow right">
                 <img src="assets/images/arrow.png" alt="arrow right">
             </div>
         </div>
@@ -564,11 +564,11 @@
                     <div class="off-1 hide-md"></div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 col-xxxl-4">
                         <form action="">
-                            <input type="text" id="name" name="name" placeholder="imię i nazwisko">
-                            <input type="text" id="email" name="email" placeholder="e-mail">
-                            <textarea id="message" name="message" placeholder="treść wiadomości" style="height:200px"></textarea>
+                            <input type="text" id="name" name="name" placeholder="imię i nazwisko" required>
+                            <input type="text" id="email" name="email" placeholder="e-mail" required>
+                            <textarea required id="message" name="message" placeholder="treść wiadomości" style="height:200px"></textarea>
                             <input type="text" id="verify" name="verify" placeholder="AXK65GH">
-                            <input type="text" id="confirm" name="confirm" placeholder="przepisz">
+                            <input required type="text" id="confirm" name="confirm" placeholder="przepisz">
                             <input type="submit" value="Wysłanie formularza">
                         </form>
                         <div class="btn-wrapper hide-xxxl show-sm">

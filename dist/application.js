@@ -38,7 +38,7 @@ function changeSlide() {
     }
 }
 
-setInterval(changeSlide, 5000);
+setInterval(changeSlide, 8000);
 
 $('#sliderArrowR').click(function () {
     changeSlide();
@@ -177,6 +177,9 @@ floorLeft.click(function () {
 floorRight.click(function () {
     imgDraw.attr("src", "assets/images/draw3.png");
 });
+
+
+
 /**
  * jQuery.fn.sortElements
  * --------------
