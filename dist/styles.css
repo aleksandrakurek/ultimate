@@ -1696,6 +1696,22 @@ header,
   display: inline-block;
 }
 
+#contact #flip.arrowRotate:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background: url(../assets/images/sm-arrow.png) 44%/40% no-repeat #00a671;
+}
+
 @media (max-width: 768px) {
   header .menu-container nav.menu .dropdown-menu .menu-items-container a .menu-item {
     width: 100%;

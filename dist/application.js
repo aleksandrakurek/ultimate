@@ -202,6 +202,22 @@ $("#sendMsg").click(function () {
     formValidate();
 
 });
+
+
+/* Mobile rollout*/
+
+$("#flip").click(function () {
+    let btnMsg = $("#flip").html();
+
+    if ($("#flip").html() == "mniej") {
+        $("#flip").html("wiecej");
+        $("#flip").toggleClass("arrowRotate");
+    } else {
+        $("#flip").html("mniej");
+        $("#flip").toggleClass("arrowRotate");
+    }
+    $("#panel").slideToggle("slow");
+});
 /**
  * jQuery.fn.sortElements
  * --------------
