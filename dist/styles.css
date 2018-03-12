@@ -1723,6 +1723,12 @@ header,
 }
 
 @media (max-width: 470px) {
+  #header-info .menu {
+    height: auto;
+  }
+  #header-info .menu #burger {
+    height: 80px;
+  }
   #list {
     padding: 50px 0;
   }
