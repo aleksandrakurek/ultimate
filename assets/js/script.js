@@ -6,18 +6,7 @@ $('a').click(function () {
 /* Burger menu */
 
 $('#burger').click(function () {
-    $('#burger-content').toggleClass('hide-md');
-    $('#burger-content').toggleClass('open-burger');
-});
-
-/* Smooth scrolling */
-$('a').click(function () {
-    $('html,body').unbind().animate({scrollTop: $($.attr(this, 'href')).offset().top}, 'slow');
-});
-
-/* Burger menu */
-
-$('#burger').click(function () {
+    console.log("hm?");
     $('#burger-content').toggleClass('hide-md');
     $('#burger-content').toggleClass('open-burger');
 });
